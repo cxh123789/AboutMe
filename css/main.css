@@ -32,7 +32,7 @@
     line-height: 100%;  
 }
 
-.nav a:hover {  
+nav a:hover {  
     color: #FF0000;  
 }  
 .nav .current a {  
@@ -96,4 +96,60 @@
         margin-left: -90px;  
     }  
       
-}  
+}
+/*横幅部分*/  
+.code ,.life{
+	height: 600px;
+}
+.show{
+	
+	height: 600px;
+	background-image: url(../img/normal.jpg);
+}
+
+
+.c{ 
+	margin-top: 100px;
+	width: 250px;
+	height: 100px;
+	float: right;
+	color: #000000;
+}
+.l{
+	margin-top: 100px;
+	width: 250px;
+	height: 100px;
+	float: left;
+	color: #000000;
+}
+h1{
+	font-size: 45px;
+}
+.level{
+	margin-top:0px ;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	color: #999999;
+}
+.project{
+	border-top: solid;
+	border-top-color:#999999 ;
+	width: 100%;
+	height: 535px;
+	background-color: #AAAAAA;
+	
+}
+.game,.map,.resume{
+	width: 320px;
+	height: 300px;
+	
+	border: 8px solid;
+	border-color: #FFFFFF ;
+}
+.game,.resume{
+	margin-right:18px ;
+}
+.pro{
+	padding-left: 70px;
+	margin-top:210px ;
+}
