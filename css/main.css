@@ -4,11 +4,15 @@
 	height: 70px;
     background-color: #000000;
 }
+
 .nav {  
     position: relative;  
     margin-top: 22px;
     
 }  
+.title{
+	color: white;
+}
 .nav ul {  
     margin: 0;  
     padding: 0;  
@@ -26,7 +30,8 @@
     text-decoration: none;  
     
     line-height: 100%;  
-}  
+}
+
 .nav a:hover {  
     color: #FF0000;  
 }  
@@ -37,22 +42,21 @@
 }  
 /*响应*/
 @media screen and (max-width: 600px) {  
-    .nav {
-    		 
+    nav {
         position: relative;  
         min-height: 40px;  
-    }     
+    }   
+
     .nav ul {  
         width: 100px;  
-        padding: 5px 0;  
-        position: absolute;  
-        top: 0;  
-        left: 0;  
-        border: solid 1px #aaa;  
+        float:right ;      
+        border: solid 2px #aaa;  
         background-color: #000000; 
-        border-radius: 5px;  
-        box-shadow: 0 1px 2px rgba(0,0,0,.3);  
-    }  
+        border-radius: 5px;   
+    } 
+    .title{
+    	display: none;
+    } 
     .nav li {  
         display: none; /* hide all <li> items */  
         margin: 0;  
@@ -62,7 +66,6 @@
     }  
     .nav a {  
         display: block;
-          
         padding: 5px 5px 5px 20px;  
         text-align: left;  
     }  
@@ -79,9 +82,7 @@
         display: block;  
         margin: 0 0 5px;  
     }  
-    .nav ul:hover .current {  
-        background: url(images/icon-check.png) no-repeat 10px 7px;  
-    }  
+  
   
     /* right nav */  
     .nav.right ul {  
@@ -90,7 +91,7 @@
     }  
   
     /* center nav */  
-    .nav.center ul {  
+    .nav.center  {  
         left: 50%;  
         margin-left: -90px;  
     }  
