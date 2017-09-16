@@ -29,32 +29,46 @@
 		<div >
 			<main class="container">
 				<!--描述：用来放横幅-->
-				<section class="show row">
-					<div class="col-md-6 life">
-						<a class="l" href="http://www.adhamdannaway.com/about">
-							<div id="designer" class="designer" style="opacity: 1;">
-								<div id="designer-desc" class="description " style="opacity: 0.891116;">
-									<h1>生活</h1>
-										<p> 喜欢一切美好的事物，喜欢看足球比赛喜欢国际米兰，打游戏，看小说。热爱生活</p>
-								</div>
-							</div>	
-						</a>
-					</div>
-					<div class="col-md-6 code">
-						<a class="c" href="http://www.adhamdannaway.com/about">
-							<div id="coder" class="coder" style="opacity: 1;">
-								<div id="coder-desc" class="description " style="opacity: 1.10888;">
-									<h1>&lt;代码&gt;</h1>
-									<p>喜欢前端，决心在未来的职业生涯中专注于网站前端技术和用户的体验设计相关工作，</p>
-								</div>
-							</div>
-						</a>
-					</div>
-				</section>
+			<section class="show">
+			<div class="showimg">
+			<div class="showimgPic">
+			<div class="content" id="lifeimg">
+				<a href="http://www.cxh1995.top/about">
+				<div class="txt">
+					<h1>生活</h1>
+					<p>喜欢一切美好的事物，喜欢看足球比赛喜欢国际米兰，打游戏，看小说。热爱生活</p>
+				</div></a>
+			</div>
+			<div class="content" id="codeimg">
+				<a href="http://www.cxh1995.top/about">
+				<div class="txt">
+					<h1>&lt;代码&gt;</h1>
+					<p>喜欢前端，决心在未来的职业生涯中专注于网站前端技术和用户的体验设计相关工作</p>
+				</div></a>
+			</div>
+			</div>
+			</div>
+			<script type="text/javascript" src="js/jquery.js"></script>
+			<script type="text/javascript" class="change">
+			
+			$(".content") .hover(function(){
+			$(this) .children(".txt").stop() .animate({height:"600px"},200);
+            $(this) .parent(".showimgPic") .css({"background":"url(img/"+($(this).attr('id'))+".jpg) no-repeat","-webkit-transition":"all 0.8s ease 0.2s","transition":"all 0.8s ease 0.2s"});
+
+			$(this) .find(".txt h1").stop() .animate({paddingTop:"130"},550);
+			$(this) .find(".txt p").stop() .show();
+			},function(){
+			$(this) .children(".txt").stop() .animate({height:"100px"},200);
+			$(this) .find(".txt h1").stop().animate({paddingTop:"0px"},550);
+			$(this) .find(".txt p").stop() .hide();
+			})
+
+		</script>
+			</section>
 				<hr class="level" />
 				
 			</main>
-			<!--	描述：用来放项目-->
+			<!--	描述：用来放项目
 			<div class="project container">
 				<div class="container">
 					<div class=" pro">
@@ -64,9 +78,10 @@
 					</div>
 				</div>
 				
-			</div>
+			</div>-->
 			<!--页脚放联系方式和个人信息 -->
 			<footer class="col-md-12"></footer>
-		</div>
+		
+
 	</body>
 </html>

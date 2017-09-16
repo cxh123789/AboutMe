@@ -39,13 +39,15 @@ nav a:hover {
     background: #999;  
     color: #fff;  
     border-radius: 5px;  
-}  
+}
+ 
 /*响应*/
 @media screen and (max-width: 600px) {  
     nav {
         position: relative;  
         min-height: 40px;  
-    }   
+    }
+ 
 
     .nav ul {  
         width: 100px;  
@@ -94,37 +96,31 @@ nav a:hover {
     .nav.center  {  
         left: 50%;  
         margin-left: -90px;  
-    }  
+    }
+   
+   .show .showimg{
+    	background-image: url(../img/normalsmall.jpg);
+    }
+    .show .showimg .showimgPic{
+    	display: none;
+    }
       
 }
-/*横幅部分*/  
-.code ,.life{
-	height: 600px;
-}
-.show{
-	
-	height: 600px;
-	background-image: url(../img/normal.jpg);
-}
+/*横幅响应*/
 
-
-.c{ 
-	margin-top: 100px;
-	width: 250px;
-	height: 100px;
+/*横幅部分*/
+.show{width:100%; overflow:hidden;margin:0 auto;}
+.show .showimg{width:100%;height:600px;position:relative;margin:0 auto; overflow:hidden;}
+.show .showimg .showimgPic{width:100%;height:600px;position:absolute; background:url(../img/normal.jpg) no-repeat;}
+.show .showimg .showimgPic .content{width:200px;height:400px;float:left;margin-top: 120px; position:relative;overflow:hidden;}
+.show .showimg .showimgPic .content .txt h1{ color: #000000; font-size:35px ;}
+.show .showimg .showimgPic .content .txt p{color:#000000;margin-top:15px;padding-top:5px;border-top:1px solid #999999;font-family: 微软雅黑;}
+#codeimg{
 	float: right;
-	color: #000000;
-}
-.l{
-	margin-top: 100px;
-	width: 250px;
-	height: 100px;
-	float: left;
-	color: #000000;
-}
-h1{
-	font-size: 45px;
-}
+} 
+
+
+/*水平线*/
 .level{
 	margin-top:0px ;
 	padding-top: 0px;
