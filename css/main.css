@@ -1,4 +1,6 @@
 /* nav */  
+
+
 .menu{
 	  
 	height: 70px;
@@ -97,23 +99,34 @@ nav a:hover {
         left: 50%;  
         margin-left: -90px;  
     }
-   
+    /*横幅响应*/
+   .show{
+   	width: 354px;
+   	height:180px;
+   }
    .show .showimg{
     	background-image: url(../img/normalsmall.jpg);
+    	width: 100%;
+    	height: 200px;
     }
     .show .showimg .showimgPic{
     	display: none;
     }
       
 }
-/*横幅响应*/
-
+/*平板响应*/
+@media screen and (max-width: 768px) { 
+    .show .showimg .showimgPic .content .txt h1{ display: none ;}
+   	.show .showimg .showimgPic .content .txt p{display: none; color: white;}
+    .resume{display: none;}
+}	
 /*横幅部分*/
 .show{width:100%; overflow:hidden;margin:0 auto;}
 .show .showimg{width:100%;height:600px;position:relative;margin:0 auto; overflow:hidden;}
-.show .showimg .showimgPic{width:100%;height:600px;position:absolute; background:url(../img/normal.jpg) no-repeat;}
-.show .showimg .showimgPic .content{width:200px;height:400px;float:left;margin-top: 120px; position:relative;overflow:hidden;}
+.show .showimg .showimgPic{width:100%;height:600px;margin-left:20px ; position:absolute; background:url(../img/normal.jpg) no-repeat;}
+.show .showimg .showimgPic .content{width:200px;height:400px;margin-right: 50px; float:left;margin-top: 120px; position:relative;overflow:hidden;}
 .show .showimg .showimgPic .content .txt h1{ color: #000000; font-size:35px ;}
+.show .showimg .showimgPic .content .txt .r{margin-right: 60px;}
 .show .showimg .showimgPic .content .txt p{color:#000000;margin-top:15px;padding-top:5px;border-top:1px solid #999999;font-family: 微软雅黑;}
 #codeimg{
 	float: right;
@@ -122,30 +135,66 @@ nav a:hover {
 
 /*水平线*/
 .level{
-	margin-top:0px ;
-	padding-top: 0px;
-	margin-bottom: 0px;
+	width: 100%;
+	height: 8px;
 	color: #999999;
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
 .project{
-	border-top: solid;
-	border-top-color:#999999 ;
-	width: 100%;
-	height: 535px;
-	background-color: #AAAAAA;
-	
-}
-.game,.map,.resume{
-	width: 320px;
-	height: 300px;
-	
-	border: 8px solid;
-	border-color: #FFFFFF ;
-}
-.game,.resume{
-	margin-right:18px ;
+	background-color: powderblue ;
+	height: 600px;
 }
 .pro{
-	padding-left: 70px;
-	margin-top:210px ;
+	
+	margin:0 auto;
+ 
+	width: 71%;
+	height: 500px;
 }
+.pro_title{
+	font-family: 宋体;
+	text-align: center;
+	padding-top: 60px;
+	margin-top: 0px;
+}
+.level_2{
+	width: 60%;
+	
+}
+.map,.game,.resume{
+	margin-top: 50px;
+	padding-left:0px ;
+	width: 300px;
+	height: 300px;
+	border: 8px solid  #FFFFFF;
+	border-radius:5px 0;
+}
+.game,.map{
+	margin-right: 34px;
+}
+.footer{
+	
+	margin: auto;
+	text-align: center;
+	width: 100%;	
+	background-color: lightslategray;	
+	
+}
+.nav-footer{
+	margin: 0 5px 10px 0;  
+    padding: 0;  
+    list-style: none;  
+    
+}
+.footerli{
+	font-size: 20px;
+	color: white;
+	padding-left: 15px;
+	display: inline; 
+	
+}
+.footerli a{
+	color: white;
+}
+

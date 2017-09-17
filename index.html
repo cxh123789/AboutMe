@@ -35,14 +35,14 @@
 			<div class="content" id="lifeimg">
 				<a href="http://www.cxh1995.top/about">
 				<div class="txt">
-					<h1>生活</h1>
+					<h1 class="l">生活</h1>
 					<p>喜欢一切美好的事物，喜欢看足球比赛喜欢国际米兰，打游戏，看小说。热爱生活</p>
 				</div></a>
 			</div>
 			<div class="content" id="codeimg">
 				<a href="http://www.cxh1995.top/about">
 				<div class="txt">
-					<h1>&lt;代码&gt;</h1>
+					<h1 class="r">&lt;代码&gt;</h1>
 					<p>喜欢前端，决心在未来的职业生涯中专注于网站前端技术和用户的体验设计相关工作</p>
 				</div></a>
 			</div>
@@ -65,23 +65,71 @@
 
 		</script>
 			</section>
-				<hr class="level" />
+
 				
 			</main>
-			<!--	描述：用来放项目
-			<div class="project container">
-				<div class="container">
-					<div class=" pro">
-					<div class="game col-md-4"></div>
-					<div class="resume col-md-4"></div>
-					<div class="map col-md-4"></div>
-					</div>
+		<hr class="level" />
+			
+		<div class="project">
+			<h2 class="pro_title">最近项目</h2>
+			<hr class="level_2"/>
+			<div class="pro">
+				<div class="game col-md-3 ">
+					<a href="#"><img class="img" src="img/game.png" alt="game" title="青蛙过河"/></a>
 				</div>
+				<div class="map col-md-3 ">
+					<a href="#"><img class="img" src="img/map.png" alt="" title="街区地图"/></a>
+				</div>
+				<div class="resume col-md-3 ">
+					<a href="#"><img class="img" src="img/resume.png" alt="resume" title="jquery简历"/></a>
+				</div>
+				</div>
+			</div>
 				
-			</div>-->
-			<!--页脚放联系方式和个人信息 -->
-			<footer class="col-md-12"></footer>
+				
 		
+			<!--页脚放联系方式和个人信息 -->
+			
+			<footer class="footer"  style="opacity: 1; top: 0px;">
+	<div class="row">
+		<div class="col-12">
+			<div class="left"><a class="transition" href="http://www.cxh1995.top/">© 2017 蔬菜</a></div>			
+			<nav >
+
+				<ul class="nav-footer">
+					<li class="footerli about"><a href="http://www.cxh1995.top/about">about</a></li>
+					<li class="footerli featured"><a href="http://www.cxh1995.top/featured">featured</a></li>
+					<li class="footerli work"><a href="http://www.cxh1995.top/portfolio">work</a></li>
+					<li class="footerli blog"><a href="http://www.cxh1995.top/blog">blog</a></li>
+					<li class="footerli contact"><a href="http://www.cxh1995.top/contact">contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</div>
+
+	<div class="gradient-white">
+		<a class="top" href="#top">back to top</a>
+	</div>
+
+</footer>
+<script type="text/javascript">
+	$(function(){
+    function footerPosition(){
+        $("footer").removeClass("fixed-bottom");
+        var contentHeight = document.body.scrollHeight,//网页正文全文高度
+            winHeight = window.innerHeight;//可视窗口高度，不包括浏览器顶部工具栏
+        if(!(contentHeight > winHeight)){
+            //当网页正文高度小于可视窗口高度时，为footer添加类fixed-bottom
+            $("footer").addClass("fixed-bottom");
+        } else {
+            $("footer").removeClass("fixed-bottom");
+        }
+    }
+    footerPosition();
+    $(window).resize(footerPosition);
+});
+</script>			
 
 	</body>
 </html>
