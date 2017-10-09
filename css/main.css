@@ -112,13 +112,25 @@ nav a:hover {
     .show .showimg .showimgPic{
     	display: none;
     }
-      
+  .pro{
+  	height: 1000px;
+  }
+  .game,.map{
+	margin-right: 34px;
 }
+}
+/*项目部分响应*/
+
+
 /*平板响应*/
 @media screen and (max-width: 768px) { 
     .show .showimg .showimgPic .content .txt h1{ display: none ;}
    	.show .showimg .showimgPic .content .txt p{display: none; color: white;}
-    .resume{display: none;}
+   	.map,.game,.resume{
+   		margin: 0 auto !important;
+   		
+   	}
+   
 }	
 /*横幅部分*/
 .show{width:100%; overflow:hidden;margin:0 auto;}
@@ -142,15 +154,14 @@ nav a:hover {
 	margin-top: 0px;
 }
 .project{
+	min-height: 600px;
 	background-color: powderblue ;
-	height: 600px;
-}
-.pro{
 	
+}
+.pro{	
 	margin:0 auto;
- 
 	width: 71%;
-	height: 500px;
+	min-height: 500px;
 }
 .pro_title{
 	font-family: 宋体;
