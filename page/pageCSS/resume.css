@@ -1,0 +1,40 @@
+
+
+#name{
+	    font-size: 2.5em;
+	    
+}
+.n_roel{
+	font-weight: 100;
+}
+#container{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	margin: 0 auto ;
+	
+
+}
+.title_name{
+	margin: 0 auto;
+	width: 80%;
+	height: 100px;
+}
+.edu_info{
+	font-weight: 110;
+	font-size: 1.25em;
+	margin: 0 auto;
+	width: 80%;
+	height: 600px;
+}
+.info_left{
+	float: left;
+	width: 50%;
+	
+	vertical-align:text-top;
+}
+.edu_right{
+	padding-left: 40px;
+	float: right;
+	width: 50%;
+}

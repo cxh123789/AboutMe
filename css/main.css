@@ -131,6 +131,12 @@ nav a:hover {
    		
    	}
    
+}
+/*断点解决12寸的macbook*/
+@media screen and max(max-width: 1350px){
+	.resume{
+		overflow: hidden ! important;	
+	}
 }	
 /*横幅部分*/
 .show{width:100%; overflow:hidden;margin:0 auto;}

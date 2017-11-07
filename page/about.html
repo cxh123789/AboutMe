@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/main.css"/>
+		<link rel="stylesheet" href="pageCSS/resume.css">
+		<title>世界脱离客观——褚翔鸿的个人空间</title>
+	</head>
+	<body>
+		
+		<header class="menu" style="background-color: #000000;">
+		<div class="container">
+		<nav class="nav col-md-12">  
+    		<ul class="right">  
+        		<li class="current col-md-2"><a href="#">蔬菜</a></li>  
+        		<li class="col-md-2"><a href="#">关于</a></li>  
+        		<li class="col-md-2"><a href="#">作品</a></li>  
+        		<li class="col-md-2"><a href="http://cxh1995.xyz">博客</a></li>  
+        		<li class="col-md-2"><span class="title">诗意是美，世界脱离客观</span></li>
+        		
+    		</ul>  
+		</nav> 
+		</div>
+		</header>
+		<main id="container">
+			<!--
+            	作者：cxh2921@gmail.com
+            	时间：2017-11-07
+            	描述：简介和个人教育经历与技能
+            -->
+			<section id="summary">
+				<div class="title_name">
+				  <h1 id="name">褚翔鸿</h1>
+				  <h2 class="n_roel">前端开发</h2>
+				</div>
+				<div class="edu_info">
+					<div class="info_left">
+						<p>
+							应届毕业生一枚，18年6月毕业，热爱前端在以后的职业生涯中原因以前端技术为生。
+						</p>
+					</div>
+					<div class="edu_right">
+						<div class="time">
+							<h3>教育经历</h3>
+							<ul>
+								<li>
+								  <div class="date">
+								  	2014年9月至2018年6月
+								  </div>
+								  <div class="role">
+								  	计算机科学与技术 （本科）
+								  </div>
+								  <div class="school">
+								  	<a href="http://www.sdili.edu.cn/" target="_blank">齐鲁工业大学（山东省科学院）</a>
+								  </div>
+								  
+								</li>
+								<li>
+								  <div class="date">
+								  	2017年2月至2017年9月
+								  </div>
+								  <div class="role">
+								  	<a href="https://cn.udacity.com/fend" target="_blank">前端开发纳米学位</a>
+								  </div>
+								  <div class="school">
+								  	<a href="https://cn.udacity.com/" target="_blank">优达学城（Udacity）</a>
+								  </div>
+								</li>
+								<li>
+								  <div class="date">2017年10月30日至今</div>
+								  <div class="role">CBUS</div>
+								  <div class="school"><a href="http://www.bankalliance.com.cn/" target="_blank">山东城市商行联盟</a></div>
+								</li>
+							</ul>
+						</div>
+						<h3>技能</h3>
+						<div class="skills">
+							<ul>
+								<li>HTML、CSS</li>
+								<li>JavaScript</li>
+								<li>Java基础</li>
+								<li>SQL基础（SqlServer）</li>
+								<li>jQuer</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			
+			</section>
+			<div class="img"></div>
+			<div class="r_project">  <!--简历项目介绍-->
+				<div class="p_resume"></div>
+				<div class="p_game"></div>
+				<div class="p_map"></div>
+				<div class="p_optimize"></div>
+			</div>
+			<!--
+            	作者：cxh2921@gmail.com
+            	时间：2017-11-07
+            	描述：想说的一些话或者喜欢的
+            -->
+			<div class="want_say"></div>
+			<!--
+            	作者：cxh2921@gmail.com
+            	时间：2017-11-07
+            	描述：页面底部存放 邮箱、GitHub、博客、联系方式
+            -->
+			<footer class="resume_foot">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</footer>
+		</main>
+			
+	<footer class="footer"  style="opacity: 1; top: 0px;">
+		<div class="row">
+			<div class="col-12">
+			<div class="left"><a class="transition" href="http://www.cxh1995.top/">© 2017 蔬菜</a></div>			
+			<nav>
+				<ul class="nav-footer">
+					<li class="footerli about"><a href="http://www.cxh1995.top/about">about</a></li>
+					<li class="footerli featured"><a href="http://www.cxh1995.top/featured">featured</a></li>
+					<li class="footerli work"><a href="http://www.cxh1995.top/portfolio">work</a></li>
+					<li class="footerli blog"><a href="http://www.cxh1995.top/blog">blog</a></li>
+					<li class="footerli contact"><a href="http://www.cxh1995.top/contact">contact</a></li>
+				</ul>
+			</nav>
+			</div>
+		</div>
+		<div class="gradient-white">
+			<a class="top" href="#top">back to top</a>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		$(function(){
+    			function footerPosition(){
+       		 $("footer").removeClass("fixed-bottom");
+        			var contentHeight = document.body.scrollHeight,//网页正文全文高度
+           		 winHeight = window.innerHeight;//可视窗口高度，不包括浏览器顶部工具栏
+        			 if(!(contentHeight > winHeight)){
+           		 //当网页正文高度小于可视窗口高度时，为footer添加类fixed-bottom
+           		 $("footer").addClass("fixed-bottom");
+       			} else {
+           		 $("footer").removeClass("fixed-bottom");
+        			}
+    			}
+    			footerPosition();
+    			$(window).resize(footerPosition);
+		});
+	</script>			
+	</body>
+</html>
