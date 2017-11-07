@@ -38,3 +38,25 @@
 	float: right;
 	width: 50%;
 }
+.edu_li{
+	list-style: none;
+	padding-top: 18px;
+}
+h3{
+	font-size:1.0em;
+	color: #134db6;
+}
+.school a{
+	color: #000000;
+	display: ;
+}
+.date{
+	font-weight: 100;
+}
+.skills{
+	font-weight: 150;
+}
+.skill_li{
+	list-style: none;
+	font-family: castellar;
+}
